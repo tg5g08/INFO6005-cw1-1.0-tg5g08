@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[en_GB]=/
+Name[en_GB]=info6005-cw1
+Exec=/usr/share/applications/info6005_cw1-1.0
+Comment[en_GB]=tg5g08 info6005 package management
+Name=info6005_cw1
+Comment=tg5g08 info6005 package management
+Icon=info
