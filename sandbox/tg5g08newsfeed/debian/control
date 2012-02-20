@@ -8,9 +8,9 @@ Homepage: https://github.com/info6005/6005_cw1_2012
 #Vcs-Git: git://git.debian.org/collab-maint/info6005-cw1.git
 #Vcs-Browser: http://git.debian.org/?p=collab-maint/info6005-cw1.git;a=summary
 
-Package: info6005-cw1
+Package: tg5g08newsfeed
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, php
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Simple php script which allows the user to host RSS feeds from the bbc website (http://feeds.bbci.co.uk/news/rss.xml).
  This simple web page will elimate the need for a user to visit the BBC
  webpage in order to view the latest news. The 'index.php' page runs
