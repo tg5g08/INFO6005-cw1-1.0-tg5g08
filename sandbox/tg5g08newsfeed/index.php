@@ -1,4 +1,3 @@
-#!/usr/bin/php
 <?php
 /*
 	6005_cw1_2012 - the Simple PHP RSS Reader for INFO6005
@@ -47,7 +46,7 @@
 
 	# Read config from file
 	if (@!$config) {
-		$config_file = 'feeds.conf';
+		$config_file = '/usr/bin/feeds.conf';
 		if (file_exists($config_file)) {
 			$config = conf_from_file($config_file);
 		}

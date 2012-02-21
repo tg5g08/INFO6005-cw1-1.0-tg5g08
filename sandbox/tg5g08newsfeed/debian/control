@@ -9,7 +9,7 @@ Homepage: https://github.com/info6005/6005_cw1_2012
 #Vcs-Browser: http://git.debian.org/?p=collab-maint/info6005-cw1.git;a=summary
 
 Package: tg5g08newsfeed
-Architecture: any
+Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Simple php script which downloads and displays news feeds from from the bbc website (http://feeds.bbci.co.uk/news/rss.xml) in the terminal.
  This simple web page will elimate the need for a user to visit the BBC
