@@ -11,11 +11,11 @@ Homepage: https://github.com/info6005/6005_cw1_2012
 Package: tg5g08newsfeed
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Simple php script which allows the user to host RSS feeds from the bbc website (http://feeds.bbci.co.uk/news/rss.xml).
+Description: Simple php script which downloads and displays news feeds from from the bbc website (http://feeds.bbci.co.uk/news/rss.xml) in the terminal.
  This simple web page will elimate the need for a user to visit the BBC
  webpage in order to view the latest news. The 'index.php' page runs
  a script from the 'rss_php.php' page in order to access the 
  latest news feeds.Therefore with this simple package you will be 
  able to have the latest news feeds from the bbc news 
- website displayed directly onto your site.
+ website displayed directly from within the terminal.
 
