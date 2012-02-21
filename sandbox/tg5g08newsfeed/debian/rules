@@ -3,6 +3,7 @@
 index = $(CURDIR)/index.php
 feed = $(CURDIR)/feeds.conf
 rss = $(CURDIR)/rss_php.php
+news = $(CURDIR)/bbcnews
 desktopconfig = $(CURDIR)/tg5g08newsfeed.desktop
 
 DEST = $(CURDIR)/debian/tg5g08newsfeed/usr/bin
@@ -27,7 +28,7 @@ clean:
 
 	dh_clean
 
-install: build $(index) $(feed) $(rss) $(desktopconfig)
+install: build $(index) $(feed) $(rss) $(desktopconfig) $(news)
 	dh_testdir
 	dh_testroot
 	dh_prep
@@ -38,6 +39,7 @@ install: build $(index) $(feed) $(rss) $(desktopconfig)
 	install -m 777 $(index) $(DEST)
 	install -m 777 $(feed) $(DEST)
 	install -m 777 $(rss) $(DEST)
+	install -m 777 $(news) $(DEST)
 	install -m 777 $(desktopconfig) $(DEST)
 
 	# Add here commands to install the package into debian/<packagename>.
