@@ -5,7 +5,7 @@ feed = $(CURDIR)/feeds.conf
 rss = $(CURDIR)/rss_php.php
 news = $(CURDIR)/bbcnews
 
-DEST1 = $(CURDIR)/debian/tg5g08newsfeed/usr/bin/
+DEST1 = $(CURDIR)/debian/tmp/usr/bin/
 
 build: build-stamp
 build-stamp:
