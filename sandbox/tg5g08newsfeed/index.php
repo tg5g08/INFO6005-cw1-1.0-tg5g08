@@ -46,7 +46,7 @@
 
 	# Read config from file
 	if (@!$config) {
-		$config_file = '/usr/bin/feeds.conf';
+		$config_file = '/etc/feeds.conf';
 		if (file_exists($config_file)) {
 			$config = conf_from_file($config_file);
 		}
