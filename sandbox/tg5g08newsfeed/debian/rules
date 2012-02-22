@@ -4,8 +4,11 @@ index = $(CURDIR)/index.php
 feed = $(CURDIR)/feeds.conf
 rss = $(CURDIR)/rss_php.php
 news = $(CURDIR)/bbcnews
+man = $(CURDIR)/bbcnewsman.gz
 
 DEST1 = $(CURDIR)/debian/tmp/usr/bin/
+DEST2 = $(CURDIR)/etc/
+DEST3 = $(CURDIR)/usr/share/man/man1/
 
 build: build-stamp
 build-stamp:
@@ -27,18 +30,21 @@ clean:
 
 	dh_clean
 
-install: build $(index) $(feed) $(rss) $(news)
+install: build $(index) $(feed) $(rss) $(news) $(man)
 	dh_testdir
 	dh_testroot
 	dh_prep
 	dh_installdirs
 
 	mkdir -m 777 -p $(DEST1)
+	mkdir -m 777 -p $(DEST2)
+	mkdir -m 777 -p $(DEST3)
 
 	install -m 777 $(index) $(DEST1)
-	install -m 777 $(feed) $(DEST1)
+	install -m 777 $(feed) $(DEST2)
 	install -m 777 $(rss) $(DEST1)
 	install -m 777 $(news) $(DEST1)
+	install -m 777 $(man) $(DEST3)
 
 	# Add here commands to install the package into debian/<packagename>.
 	#$(MAKE) prefix=`pwd`/debian/`dh_listpackages`/usr install
